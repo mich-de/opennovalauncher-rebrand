@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="64.0" android:viewportHeight="64.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:pathData="@string/weather_cloud_open_bottom" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+    <group android:name="drop_1_group" android:translateX="-1.0" android:translateY="3.0">
+        <path android:name="drop_1_path" android:fillColor="?weatherColorRain" android:pathData="@string/weather_rain_drop" />
+    </group>
+    <group android:name="drop_2_group" android:translateX="8.5" android:translateY="9.0">
+        <path android:name="drop_2_path" android:fillColor="?weatherColorRain" android:pathData="@string/weather_rain_drop" />
+    </group>
+    <group android:name="drop_3_group" android:translateX="19.0" android:translateY="-3.0">
+        <path android:name="drop_3_path" android:fillColor="?weatherColorRain" android:pathData="@string/weather_rain_drop" />
+    </group>
+</vector>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/searchbar_icon_dots" android:drawable="@drawable/appsearch_dots" />
+    <item android:id="@id/searchbar_icon_magnifier" android:drawable="@drawable/appsearch_magnifier" />
+</layer-list>

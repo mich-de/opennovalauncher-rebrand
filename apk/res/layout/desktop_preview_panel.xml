@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.desktoppreview.DesktopPreviewPanelView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.widget.PressedAlphaCheckedTextView android:textSize="0.0px" android:layout_gravity="center|top" android:id="@id/default_page_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/default_page_button" android:drawablePadding="0.0px" android:contentDescription="@string/set_as_default_home_page" style="@style/DesktopPreviewPaneButton" />
+    <LinearLayout android:layout_gravity="bottom|center" android:id="@id/overview_button_bar" android:layout_width="256.0dip" android:layout_height="wrap_content">
+        <com.teslacoilsw.launcher.widget.PressedAlphaCheckedTextView android:id="@id/wallpaper_button" android:text="@string/wallpaper_button_text" android:drawableTop="@drawable/ic_wallpaper" style="@style/DesktopPreviewPaneButton" />
+        <Space android:id="@id/space" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+        <com.teslacoilsw.launcher.widget.PressedAlphaCheckedTextView android:id="@id/settings_button" android:text="@string/settings_button_text" android:drawableTop="@drawable/ic_setting" style="@style/DesktopPreviewPaneButton" />
+    </LinearLayout>
+</com.teslacoilsw.launcher.desktoppreview.DesktopPreviewPanelView>

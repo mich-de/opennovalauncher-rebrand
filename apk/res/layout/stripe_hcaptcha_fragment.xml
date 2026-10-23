@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.stripe.hcaptcha.webview.HCaptchaWebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loadingContainer" android:background="@android:color/white" android:padding="20.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="150.0dip" android:layout_height="wrap_content" android:src="@drawable/stripe_ic_hcaptcha_logo" android:adjustViewBounds="true" android:contentDescription="@string/stripe_hcaptcha_logo_description" />
+        <ProgressBar android:layout_gravity="center" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" />
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stripe_hcaptcha_loading_text" />
+    </LinearLayout>
+</RelativeLayout>

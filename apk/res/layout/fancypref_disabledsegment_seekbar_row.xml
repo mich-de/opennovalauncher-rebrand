@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/title" android:paddingBottom="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/FancyPrefTitle" />
+    <com.teslacoilsw.launcher.widget.DisabledSegmentSeekBar android:id="@id/seekBar" android:paddingTop="40.0dip" android:paddingBottom="12.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/MatCompat.Widget.SeekBar" />
+    <TextView android:textColor="@color/fancypref_seekbar_value_color" android:gravity="end|bottom|center" android:id="@id/valueText" android:paddingLeft="16.0dip" android:paddingTop="0.0dip" android:paddingRight="16.0dip" android:paddingBottom="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="72.0sp" app:layout_constraintBaseline_toBaselineOf="@id/title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/FancyPrefTitle" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ai_sdk_v2_tool_card_bg" />
+    <stroke android:width="0.5dip" android:color="@color/ai_sdk_v2_tool_card_border" />
+    <corners android:radius="18.0dip" />
+</shape>

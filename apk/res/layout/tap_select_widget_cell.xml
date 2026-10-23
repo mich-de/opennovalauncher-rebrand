@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.widget.WidgetCell android:gravity="center_horizontal" android:orientation="vertical" android:focusable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingHorizontal="@dimen/widget_cell_horizontal_padding" android:paddingVertical="@dimen/widget_cell_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.launcher3.widget.WidgetCellPreview android:id="@id/widget_preview_container" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" android:importantForAccessibility="no" android:layout_marginVertical="8.0dip">
+        <com.android.launcher3.widget.WidgetImageView android:layout_gravity="fill" android:id="@id/widget_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/widget_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/profile_badge_margin" android:importantForAccessibility="no" />
+    </com.android.launcher3.widget.WidgetCellPreview>
+    <TextView android:textSize="@dimen/widget_cell_font_size" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/widget_name" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:drawablePadding="8.0dip" />
+    <FrameLayout android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip">
+        <TextView android:textSize="@dimen/widget_cell_font_size" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:id="@id/widget_dims" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.7" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/widgetdrawer_shortcut_textcolor" android:gravity="center_horizontal" android:id="@id/widget_shortcut_label" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shortcut" />
+    </FrameLayout>
+</com.android.launcher3.widget.WidgetCell>

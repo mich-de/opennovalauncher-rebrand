@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.teslacoilsw.launcher.widget.MaterialProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="64.0dip" android:layout_height="64.0dip" />
+    <com.android.launcher3.views.SpringRelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.launcher3.views.RecyclerViewFastScroller android:id="@id/fast_scroller" android:layout_width="@dimen/fastscroll_width" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/fastscroll_end_margin" android:layout_alignParentEnd="true" />
+        <com.bignerdranch.expandablerecyclerview.Adapter.ExpandableFastScrollRecyclerView android:id="@android:id/list" android:paddingLeft="@dimen/settings_horizontal_padding" android:paddingRight="@dimen/settings_horizontal_padding" android:visibility="invisible" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:groupIndicator="@null" android:fastScrollEnabled="true" />
+        <TextView android:id="@id/fast_scroller_popup" android:layout_alignParentTop="true" android:layout_marginEnd="@dimen/fastscroll_popup_margin" android:layout_alignParentEnd="true" style="@style/FastScrollerPopup" />
+    </com.android.launcher3.views.SpringRelativeLayout>
+</FrameLayout>

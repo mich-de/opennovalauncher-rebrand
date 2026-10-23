@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingMode="stack"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <ripple android:color="?colorControlHighlight">
+            <item android:id="@android:id/mask">
+                <inset android:insetBottom="2.0dip">
+                    <shape android:tint="?colorButtonNormal" android:shape="rectangle">
+                        <corners android:topLeftRadius="4.0dip" android:topRightRadius="4.0dip" />
+                        <solid android:color="@android:color/white" />
+                    </shape>
+                </inset>
+            </item>
+        </ripple>
+    </item>
+    <item android:drawable="@drawable/abc_textfield_default_mtrl_alpha" />
+</layer-list>

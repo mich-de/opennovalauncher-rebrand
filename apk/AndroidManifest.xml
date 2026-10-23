@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="com.teslacoilsw.launcher" platformBuildVersionCode="36" platformBuildVersionName="16">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <permission android:description="@string/permdesc_read_settings" android:label="@string/permlab_read_settings" android:name="com.teslacoilsw.launcher.permission.NOVA" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.teslacoilsw.launcher.permission.NOVA"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <queries>
+        <package android:name="com.google.android.gms"/>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:scheme="tel"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="smsto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SET_TIMER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SET_ALARM"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SHOW_ALARMS"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SHOW_TIMERS"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DISMISS_ALARM"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DISMISS_TIMER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SNOOZE_ALARM"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.MEDIA_PLAY_FROM_SEARCH"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAMERA"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="geo"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="google.navigation"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="google.streetview"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.POWER_USAGE_SUMMARY"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.APP_MESSAGING"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.APP_CALCULATOR"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEARCH"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MEDIA_SEARCH"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.dir/event"/>
+        </intent>
+        <package android:name="com.instabridge.android"/>
+        <package android:name="com.teslacoilsw.launcher"/>
+        <package android:name="com.eyecon.global"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:path="tel:"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+        </intent>
+        <package android:name="com.spotify.music"/>
+        <package android:name="com.spotify.music.debug"/>
+        <package android:name="com.spotify.music.canary"/>
+        <package android:name="com.spotify.music.partners"/>
+        <intent>
+            <action android:name="com.spotify.sso.action.START_AUTH_FLOW"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.android.chrome"/>
+        <intent>
+            <action android:name="com.singular.preinstall.READ_PERMISSION_SINGULAR"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent>
+        <intent>
+            <action android:name="com.digitalturbine.ignite.cl.IgniteRemoteService"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-feature android:name="android.hardware.telephony.euicc" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.amazon.privacypass.ATTEST"/>
+    <permission android:name="com.teslacoilsw.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.teslacoilsw.launcher.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:backupAgent="com.android.launcher3.LauncherBackupAgent" android:backupInForeground="true" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/backupscheme" android:fullBackupOnly="true" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher_home" android:label="@string/derived_app_name" android:largeHeap="@bool/config_largeHeap" android:localeConfig="@xml/_generated_res_locale_config" android:name="com.teslacoilsw.launcher.NovaApplication" android:restoreAnyVersion="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="density|keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize" android:enabled="true" android:exported="true" android:launchMode="singleTask" android:name="com.teslacoilsw.launcher.NovaLauncher" android:resizeableActivity="true" android:resumeWhilePausing="true" android:screenOrientation="unspecified" android:stateNotNeeded="true" android:taskAffinity="" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.MONKEY"/>
+                <category android:name="android.intent.category.LAUNCHER_APP"/>
+            </intent-filter>
+            <meta-data android:name="com.android.launcher3.grid.control" android:value="com.teslacoilsw.launcher.grid_control"/>
+        </activity>
+        <activity android:exported="true" android:finishOnCloseSystemDialogs="true" android:icon="@drawable/ic_allapps" android:label="@string/nova_action" android:name="com.teslacoilsw.launcher.NovaShortcutCreateActivity" android:process=":wallpaper_chooser" android:theme="@style/OpenNova.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.teslacoilsw.launcher.NovaShortcutHandler" android:noHistory="false" android:stateNotNeeded="true" android:taskAffinity="" android:theme="@style/OpenNova.Translucent" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.teslacoilsw.launcher.ACTION_GOOGLE_NOW_SETTINGS"/>
+                <action android:name="com.teslacoilsw.launcher.ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/app_shortcuts"/>
+        </activity>
+        <activity android:autoRemoveFromRecents="true" android:name="com.teslacoilsw.launcher.onboarding.FirstRunActivityCompose" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:autoRemoveFromRecents="true" android:name="com.teslacoilsw.launcher.onboarding.NovaPaywallActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:exported="false" android:label="@string/rewards_title" android:name="com.teslacoilsw.launcher.rewards.RewardsActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:label="@string/nova_ai_chat_title" android:launchMode="singleTask" android:name="com.teslacoilsw.launcher.ai.NovaAiChatActivity" android:taskAffinity="com.teslacoilsw.launcher.ai" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:exported="false" android:label="@string/nova_ai_insight_history_title" android:name="com.teslacoilsw.launcher.ai.NovaAiInsightHistoryActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:exported="false" android:label="@string/nova_ai_settings_title" android:name="com.teslacoilsw.launcher.ai.NovaAiSettingsActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="@string/nova_ai_debug_qa" android:name="com.teslacoilsw.launcher.ai.NovaAiDebugActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:autoRemoveFromRecents="true" android:name="com.teslacoilsw.launcher.onboarding.WhatsNewActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:icon="@drawable/launcher_icon_settings" android:label="OpenNova Settings Legacy" android:name="com.teslacoilsw.launcher.preferences.SettingsActivityLegacy" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:icon="@drawable/launcher_icon_settings" android:label="@string/nova_settings" android:name="com.teslacoilsw.launcher.preferences.SettingsActivity" android:theme="@style/OpenNova.DayNight.Wallpaper">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/nova_settings" android:name="com.teslacoilsw.launcher.preferences.NovaSettingsSearchActivity" android:parentActivityName="com.teslacoilsw.launcher.preferences.SettingsActivityLegacy" android:theme="@style/OpenNova.Translucent">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.teslacoilsw.launcher.preferences.SettingsActivityLegacy"/>
+        </activity>
+        <activity android:icon="@drawable/launcher_icon_settings" android:label="@string/preference_icon_layout" android:name="com.teslacoilsw.launcher.preferences.AdaptiveIconSettingsActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:icon="@drawable/launcher_icon_settings" android:label="@string/preference_icon_layout" android:name="com.teslacoilsw.launcher.preferences.IconLayoutSettingsActivity" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:finishOnCloseSystemDialogs="true" android:label="Theme Picker" android:name="com.teslacoilsw.launcher.theme.PickerActivity" android:process=":wallpaper_chooser" android:theme="@style/OpenNova.DayNight.Wallpaper"/>
+        <activity android:label="@string/choose_action" android:name="com.teslacoilsw.launcher.ChooseActionIntentActivity" android:theme="@style/OpenNova.DayNight"/>
+        <activity android:label="@string/activity_licensing_enter_code" android:name="com.teslacoilsw.tesladirect.DirectLicensingEnterCode" android:theme="@style/OpenNova.DayNight" android:windowSoftInputMode="stateHidden"/>
+        <activity android:icon="@mipmap/ic_launcher_bulkadd" android:label="@string/apps_or_folder" android:name="com.teslacoilsw.launcher.BulkAddAppActivity" android:theme="@style/OpenNova.DayNight"/>
+        <activity android:exported="true" android:finishOnCloseSystemDialogs="true" android:icon="@mipmap/ic_launcher_puzzle" android:label="@string/activities_shortcuts" android:name="com.teslacoilsw.launcher.ActivitiesShortcutActivity" android:process=":wallpaper_chooser" android:theme="@style/OpenNova.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="false" android:exported="true" android:name="com.teslacoilsw.launcher.homereset.HomeReset">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:finishOnCloseSystemDialogs="true" android:launchMode="singleInstance" android:name="com.teslacoilsw.launcher.integrations.IntegrationPermissionActivity" android:noHistory="true" android:theme="@style/OpenNova.Translucent">
+            <intent-filter>
+                <action android:name="com.teslacoilsw.launcher.CONFIGURE_INTEGRATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ninja.sesame.lib.bridge.v1.action.BEACON"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="false" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="ninja.sesame.lib.bridge.v1.access.RelayActivity" android:noHistory="true" android:stateNotNeeded="true" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="ninja.sesame.lib.bridge.v1.action.RELAY"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="false" android:excludeFromRecents="true" android:exported="false" android:launchMode="standard" android:name="ninja.sesame.lib.bridge.v1.access.IntegrationActivity" android:noHistory="true" android:stateNotNeeded="true" android:theme="@style/__sesame_lib__InvisibleTheme"/>
+        <provider android:authorities="com.teslacoilsw.launcher.sesame-lib.command" android:enabled="false" android:exported="true" android:name="ninja.sesame.lib.bridge.v1.access.CommandProvider"/>
+        <provider android:authorities="com.teslacoilsw.launcher.sesame-lib.icons" android:enabled="false" android:exported="true" android:name="ninja.sesame.lib.bridge.v1.access.IconProvider"/>
+        <activity android:label="@string/preference_configure_tabs" android:name="com.teslacoilsw.launcher.drawer.drawergroups.DrawerTabSetupActivity" android:theme="@style/OpenNova.DayNight"/>
+        <activity android:label="@string/hide_apps" android:name="com.teslacoilsw.launcher.drawer.drawergroups.GroupAppListActivity" android:theme="@style/OpenNova.DayNight"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:finishOnCloseSystemDialogs="true" android:label="@string/nova_wallpaper" android:name="com.teslacoilsw.launcher.wallpaper.app.CropImage" android:process=":wallpaper_chooser" android:theme="@style/OpenNova.Dark" android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:exported="true" android:finishOnCloseSystemDialogs="true" android:label="@string/nova_wallpaper" android:name="com.android.launcher3.LauncherWallpaperPickerActivity" android:process=":wallpaper_chooser" android:theme="@style/OpenNova.WallpaperCrop">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:finishOnCloseSystemDialogs="true" android:label="@string/nova_wallpaper" android:name="com.android.launcher3.WallpaperCropActivity" android:process=":wallpaper_chooser" android:theme="@style/OpenNova.WallpaperCrop">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.CROP_AND_SET_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ATTACH_DATA"/>
+                <data android:mimeType="image/*"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Changelog" android:name="com.teslacoilsw.tesladirect.ChangeLogDialog" android:theme="@style/OpenNova.DayNight"/>
+        <activity android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:exported="true" android:finishOnCloseSystemDialogs="true" android:launchMode="singleInstance" android:name="com.teslacoilsw.launcher.IconThemePrompt" android:noHistory="true" android:theme="@style/OpenNova.Translucent">
+            <intent-filter>
+                <action android:name="com.teslacoilsw.launcher.APPLY_ICON_THEME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="Contact OpenNova Support" android:name="com.teslacoilsw.launcher.preferences.ContactSupportActivity" android:theme="@style/OpenNova.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="mailto" android:sspPattern="support@branch.com"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:exported="true" android:finishOnCloseSystemDialogs="true" android:launchMode="singleInstance" android:name="com.teslacoilsw.launcher.RestoreBackupFileHandler" android:noHistory="true" android:theme="@style/OpenNova.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="application/vnd.opennovalauncher.backup" android:scheme="content"/>
+                <data android:mimeType="application/octet-stream" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="content"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:mimeType="*/*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:pathPattern=".*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+                <data android:host="*" android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.novabackup" android:scheme="file"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.teslacoilsw.launcher.screenoff.TimeOutActivity" android:noHistory="true" android:screenOrientation="locked" android:theme="@style/OpenNova.TimeOut"/>
+        <activity android:autoRemoveFromRecents="true" android:excludeFromRecents="true" android:icon="@drawable/ic_allapps" android:label="@string/nova_action_app_drawer" android:name="com.teslacoilsw.launcher.preferences.AddAppDrawerActivity" android:theme="@style/AddItemActivityTheme"/>
+        <provider android:authorities="com.teslacoilsw.launcher.api" android:exported="true" android:name="com.teslacoilsw.launcher.ApiProvider"/>
+        <provider android:authorities="com.teslacoilsw.launcher.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="aosp.androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:name="com.teslacoilsw.launcher.oem.samsung.SamsungThemeReceiver" android:permission="com.samsung.android.permission.MODIFY_THEME">
+            <intent-filter>
+                <action android:name="com.samsung.android.theme.themecenter.THEME_APPLY"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.teslacoilsw.launcher.oem.razer.RazerThemeReceiver" android:permission="razer.permission.RESTART_UI">
+            <intent-filter>
+                <action android:name="com.razerzone.intent.action.THEME_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.teslacoilsw.launcher.screenoff.DeviceAdminEnableActivity" android:theme="@style/OpenNova.Translucent"/>
+        <activity android:name="com.teslacoilsw.launcher.search.calendar.CalendarPermissionActivity" android:theme="@style/OpenNova.Translucent"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.teslacoilsw.launcher.privacy.KoreaAnalyticsConsentActivity" android:theme="@style/OpenNova.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.teslacoilsw.launcher.games.GamesActivity" android:taskAffinity=".games" android:theme="@style/OpenNova.DayNight"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.teslacoilsw.launcher.novamobile.NovaMobileActivity" android:taskAffinity=".novamobile" android:theme="@style/OpenNova.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mobile" android:scheme="nova"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="nova.branch.engage.sesame_lite.api_integration.SlackOauthActivity"/>
+        <activity android:exported="true" android:launchMode="singleInstance" android:name="com.teslacoilsw.launcher.search.shortcutsearch.authorization.LoginOauthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="nova.branch.search" android:path="/callback/oauth2" android:scheme="disco"/>
+            </intent-filter>
+        </activity>
+        <receiver android:description="@string/deviceadmin_description" android:enabled="true" android:exported="true" android:name="com.teslacoilsw.launcher.NovaDeviceAdminReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/device_admin"/>
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.teslacoilsw.launcher.MyPackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.teslacoilsw.launcher.analytics.NovaFcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.teslacoilsw.launcher.NovaAccessibilityService" android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data android:name="android.accessibilityservice" android:resource="@xml/accessibilityservice_config"/>
+        </service>
+        <service android:exported="true" android:label="@string/notification_service_label" android:name="com.teslacoilsw.launcher.notificationlistener.NotificationListener" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.teslacoilsw.launcher.wallpaper.compat.WallpaperManagerCompatVL$ColorExtractionService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":wallpaper_chooser"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.samsung.android.non_immersive" android:value="true"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBdDzbs3DuxucMmToxLxRe49qSf9oA3W-s"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4858839354660716~2363379427"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="\ 863478119724418"/>
+        <receiver android:exported="true" android:name="com.android.launcher3.SessionCommitReceiver">
+            <intent-filter>
+                <action android:name="android.content.pm.action.SESSION_COMMITTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.android.launcher3.AppWidgetsRestoredReceiver">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_HOST_RESTORED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <activity android:autoRemoveFromRecents="true" android:excludeFromRecents="true" android:exported="true" android:name="com.android.launcher3.dragndrop.AddItemActivity" android:theme="@style/AddItemActivityTheme">
+            <intent-filter>
+                <action android:name="android.content.pm.action.CONFIRM_PIN_SHORTCUT"/>
+                <action android:name="android.content.pm.action.CONFIRM_PIN_APPWIDGET"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.teslacoilsw.launcher.settings" android:exported="false" android:name="com.android.launcher3.LauncherProvider"/>
+        <activity android:enabled="false" android:exported="true" android:launchMode="singleTop" android:name="com.android.launcher3.secondarydisplay.SecondaryDisplayLauncher" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.SECONDARY_HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.teslacoilsw.launcher.ai_sdk_fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.instabridge.ai.account.AiSdkFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ai_sdk_file_provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.instabridge.ai.chat.ui.AiChatActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.instabridge.ai.chat.ui.ConversationListActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:exported="false" android:name="com.instabridge.ai.profile.ProfileActivity" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.instabridge.mobilesdk.internal.ui.MobileFlowActivity" android:theme="@style/Theme.MobileSdk"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <service android:exported="true" android:label="carrier_config_service" android:name="com.instabridge.mobilesdk.internal.esim.MobileSdkCarrierConfig" android:permission="android.permission.BIND_CARRIER_SERVICES">
+            <intent-filter>
+                <action android:name="android.service.carrier.CarrierService"/>
+            </intent-filter>
+            <meta-data android:name="android.service.carrier.LONG_LIVED_BINDING" android:value="true"/>
+        </service>
+        <provider android:authorities="com.teslacoilsw.launcher.mobilesdk.esimshare" android:exported="false" android:grantUriPermissions="true" android:name="com.instabridge.mobilesdk.internal.MobileSdkFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/mobile_sdk_esim_share_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.PaymentSheetActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.customersheet.CustomerSheetActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.addresselement.AutocompleteActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.paymentdatacollection.bacs.BacsMandateConfirmationActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.ui.SepaMandateActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.ExternalPaymentMethodProxyActivity" android:theme="@style/StripePayLauncherDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentelement.confirmation.cpms.CustomPaymentMethodProxyActivity" android:theme="@style/StripePayLauncherDefaultTheme"/>
+        <activity android:name="com.stripe.android.paymentsheet.paymentdatacollection.cvcrecollection.CvcRecollectionActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:name="com.stripe.android.paymentelement.embedded.form.FormActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:name="com.stripe.android.paymentelement.embedded.manage.ManageActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.attestation.AttestationActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="false" android:label="@string/stripe_link" android:name="com.stripe.android.link.LinkActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.stripe.android.link.LinkForegroundActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.stripe.android.link.LinkRedirectHandlerActivity" android:theme="@style/StripeTransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="complete" android:path="/com.teslacoilsw.launcher" android:scheme="link-popup"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.stripe.android.shoppay.ShopPayActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.templates.renderer.fullscreen.FullscreenWebviewActivity" android:theme="@style/FullscreenAdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.VastActivity" android:screenOrientation="fullSensor" android:theme="@style/FullscreenAdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.staticrenderer.StaticAdActivity" android:screenOrientation="fullSensor" android:theme="@style/FullscreenAdActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.mraid.MraidActivity" android:screenOrientation="fullSensor" android:theme="@style/FullscreenAdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.libraries.ads.mobile.sdk.common.AdActivity" android:theme="@style/Theme.GoogleMobileAds"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identityauth.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.3.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.spotify.sdk.android.auth.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="nova.branch.search.spotify" android:scheme="disco"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.teslacoilsw.launcher.AudienceNetworkContentProvider" android:exported="false" android:name="com.facebook.ads.AudienceNetworkContentProvider"/>
+        <meta-data android:name="com.bytedance.sdk.pangle.version" android:value="8.2.0.4"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTCeilingLandingPageActivity">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.IABLandingPageActivity" android:theme="@style/tt_landing_page">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTLandingPageActivity" android:theme="@style/tt_landing_page">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTPlayableLandingPageActivity" android:theme="@style/tt_landing_page">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTVideoLandingPageLink2Activity" android:theme="@style/tt_landing_page">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTHistoryLandingPageActivity" android:theme="@style/tt_landing_page">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTHistoryActivity" android:theme="@style/tt_landing_page">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTWebsiteActivity" android:theme="@style/tt_privacy_landing_page">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTAppOpenAdActivity" android:theme="@style/tt_app_open_ad_no_animation">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTAppOpenAdTransActivity" android:theme="@style/tt_app_open_ad_no_animation_trans">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTRewardVideoActivity" android:theme="@style/tt_full_screen_new">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTRewardWebActivity" android:theme="@style/tt_full_screen_new">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.activity.TTFullWebActivity" android:theme="@style/tt_full_screen_new">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTRewardExpressVideoActivity" android:theme="@style/tt_full_screen_new">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTFullScreenVideoActivity" android:theme="@style/tt_full_screen_new">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTFullScreenExpressVideoActivity" android:theme="@style/tt_full_screen_new">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:multiprocess="true" android:name="com.bytedance.sdk.openadsdk.activity.single.TTAdActivity" android:theme="@style/tt_full_screen_new">
+            <property android:name="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" android:value="true"/>
+        </activity>
+        <activity android:exported="false" android:name="com.stripe.android.view.PaymentAuthWebViewActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.view.PaymentRelayActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.stripe.android.payments.StripeBrowserLauncherActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity" android:theme="@style/StripeTransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="payment_return_url" android:path="/com.teslacoilsw.launcher" android:scheme="stripesdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity" android:theme="@style/StripeGooglePayDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity" android:theme="@style/StripeGooglePayDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity" android:theme="@style/StripePayLauncherDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.challenge.passive.PassiveChallengeActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.challenge.passive.warmer.activity.PassiveChallengeWarmerActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.challenge.confirmation.IntentConfirmationChallengeActivity" android:theme="@style/StripePaymentSheetBaseTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.stripe.android.financialconnections.lite.FinancialConnectionsSheetLiteRedirectActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="financial-connections-lite" android:pathPrefix="/com.teslacoilsw.launcher/auth_redirect" android:scheme="stripe"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.stripe.android.financialconnections.lite.FinancialConnectionsSheetLiteActivity" android:theme="@style/StripeBottomSheetActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:enabled="true" android:exported="false" android:name="io.branch.search.internal.multiprocess.BranchSearchService" android:process="@string/branch_process">
+            <intent-filter>
+                <action android:name="search.query"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:label="Branch local content update service" android:name="io.branch.search.internal.services.stub.android.AndroidBundleUpdateService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="@string/branch_process"/>
+        <service android:exported="false" android:label="DISCONTINUED Branch local content update service" android:name="io.branch.search.internal.rawsqlite.SQLUpdaterService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="@string/branch_process"/>
+        <service android:exported="false" android:label="Branch aggregate analytics" android:name="io.branch.search.internal.services.stub.android.AndroidScheduledQueryService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="@string/branch_process"/>
+        <service android:exported="false" android:label="Branch pre-init cache" android:name="io.branch.search.internal.services.stub.android.AndroidCacheUpdateService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:label="Branch aggregate analytics" android:name="io.branch.search.internal.services.stub.android.AndroidPingService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="@string/branch_process"/>
+        <service android:exported="false" android:label="Branch local content update service" android:name="io.branch.search.internal.rawsqlite.BundleUpdateService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="@string/branch_process"/>
+        <service android:exported="false" android:label="Branch aggregate analytics" android:name="io.branch.search.internal.services.ScheduledQueryService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="@string/branch_process"/>
+        <service android:exported="false" android:label="Branch pre-init cache" android:name="io.branch.search.internal.services.CacheUpdateService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:label="Branch aggregate analytics" android:name="io.branch.search.internal.services.PingService" android:permission="android.permission.BIND_JOB_SERVICE" android:process="@string/branch_process"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <provider android:authorities="com.teslacoilsw.launcher.BranchSearch" android:enabled="true" android:exported="false" android:multiprocess="false" android:name="io.branch.search.internal.multiprocess.BncContentProvider" android:process="@string/branch_process"/>
+        <provider android:authorities="com.teslacoilsw.launcher.BranchUserAgentLoader" android:exported="false" android:name="io.branch.search.internal.multiprocess.UserAgentProvider" android:process="@string/branch_user_agent_process"/>
+        <provider android:authorities="com.teslacoilsw.launcher.BranchAdbProvider" android:enabled="true" android:exported="true" android:name="io.branch.search.internal.control.BranchAdbProvider" android:permission="android.permission.DUMP" android:process="@string/branch_process"/>
+        <activity android:name="io.branch.search.internal.ui.InvisibleRedirectActivity" android:theme="@style/InvisibleRedirectActivity"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.google.android.play.core.hsdp.service.HsdpShimActivity" android:theme="@style/Theme.HsdpServiceTransparent"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.teslacoilsw.launcher.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="io.branch.engage.sesame_lite.api_integration.AskPermissionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity" android:theme="@style/Stripe3DS2Theme"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="nova.branch.engage.sesame_lite.api_integration.AskPermissionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.teslacoilsw.launcher.searchResultFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="nova.branch.engage.sesame_lite.api_integration.files.SearchResultFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.vungle.ads.internal.ui.VungleActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.teslacoilsw.launcher.vungle-provider" android:exported="false" android:initOrder="102" android:name="com.vungle.ads.VungleProvider"/>
+        <uses-library android:name="com.amazon.privacypass" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.InneractiveInternalBrowserActivity" android:screenOrientation="fullUser"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.InneractiveFullscreenAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.InneractiveRichMediaVideoPlayerActivityCore" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:name="com.fyber.inneractive.sdk.activities.InternalStoreWebpageActivity" android:screenOrientation="sensor" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.fyber.inneractive.sdk.activities.FyberReportAdActivity" android:screenOrientation="fullUser"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="aia-compat-api-min-version" android:value="1"/>
+    </application>
+</manifest>

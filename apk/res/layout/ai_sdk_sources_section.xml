@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sourcesTrigger" android:background="?android:selectableItemBackground" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sourcesBookIcon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ai_sdk_ic_book" android:contentDescription="@null" android:layout_marginEnd="6.0dip" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:id="@id/sourcesTriggerText" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/sourcesChevron" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ai_sdk_ic_arrow_down" android:contentDescription="@null" android:rotation="0.0" android:layout_marginStart="4.0dip" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="20.0" android:viewportHeight="20.0" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@drawable/$ic_qsb_google_gemini_for_tone_50__0" android:pathData="M20,10.02C14.636,10.343 10.343,14.636 10.02,20H9.98C9.657,14.636 5.364,10.343 0,10.02V9.98C5.364,9.657 9.657,5.364 9.98,0H10.02C10.343,5.364 14.636,9.657 20,9.98V10.02Z" />
+</vector>

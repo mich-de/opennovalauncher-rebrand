@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.widget.RippleScrollView android:id="@id/app_search_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.compose.ui.platform.ComposeView android:id="@id/pre_app_list_compose" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.teslacoilsw.launcher.drawer.AppPageStandard android:id="@id/app_list" android:layout_width="fill_parent" android:layout_height="fill_parent" app:canSqueezeOneExtra="false" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/post_app_list_compose" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/search_icon_ad_compose" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/search_ad_compose" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.teslacoilsw.launcher.widget.RippleScrollView>

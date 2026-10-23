@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:icon="@drawable/ic_add_24dp" android:id="@id/add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add" />
+    </LinearLayout>
+</ScrollView>

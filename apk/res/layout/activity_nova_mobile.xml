@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="?homeAsUpIndicator" app:title="@string/nova_mobile_card_title" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="top" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

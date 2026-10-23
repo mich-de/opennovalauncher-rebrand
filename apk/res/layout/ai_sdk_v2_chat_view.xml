@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/ai_sdk_v2_chat_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/v2ChatRecycler" android:paddingTop="20.0dip" android:paddingBottom="24.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" android:paddingHorizontal="16.0dip" />
+            <LinearLayout android:gravity="start|bottom|center" android:orientation="vertical" android:id="@id/v2EmptyState" android:paddingBottom="24.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="24.0dip">
+                <TextView android:textSize="44.0sp" android:textColor="@color/ai_sdk_v2_text_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ai_sdk_v2_empty_title" android:lineSpacingMultiplier="1.0" android:fontFamily="sans-serif-medium" android:letterSpacing="-0.035" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/ai_sdk_v2_text_tertiary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/ai_sdk_v2_empty_subtitle" android:letterSpacing="-0.01" />
+                <LinearLayout android:orientation="vertical" android:id="@id/v2InitialSuggestions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.instabridge.ai.chat.ui.ChatInputBar android:id="@id/v2ChatInputBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center" android:id="@id/v2JumpToBottomFab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="96.0dip" android:src="@drawable/ai_sdk_ic_arrow_down" android:contentDescription="@string/ai_sdk_new_messages" />
+</merge>

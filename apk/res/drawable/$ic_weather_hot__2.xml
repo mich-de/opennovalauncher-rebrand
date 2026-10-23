@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator android:interpolator="@anim/weather_thunder_interpolator" android:duration="6000" android:startOffset="3000" android:repeatCount="infinite" android:repeatMode="restart" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="strokeAlpha"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" />

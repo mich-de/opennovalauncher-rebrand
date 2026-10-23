@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient android:startColor="@color/ai_sdk_brand_orange" android:endColor="@color/ai_sdk_brand_violet" android:angle="135.0" android:type="linear" android:centerColor="@color/ai_sdk_brand_peach" />
+            <corners android:radius="24.0dip" />
+        </shape>
+    </item>
+    <item android:left="1.5dip" android:top="1.5dip" android:right="1.5dip" android:bottom="1.5dip">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ai_sdk_chat_input_background" />
+            <corners android:radius="22.5dip" />
+        </shape>
+    </item>
+</layer-list>

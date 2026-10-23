@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="64.0dip" android:width="64.0dip" android:viewportWidth="64.0" android:viewportHeight="64.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M12.403,32H51.597" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineCap="round" />
+    <path android:pathData="M17.0689,43.1983H46.9311" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineCap="round" />
+    <path android:pathData="M24.5345,54.3966H39.4655" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineCap="round" />
+    <path android:pathData="M7.737,20.8017H56.263" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineCap="round" />
+    <path android:pathData="M4.0042,9.6034H59.9958" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineCap="round" />
+</vector>

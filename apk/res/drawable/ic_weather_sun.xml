@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$ic_weather_sun__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="path_12" android:animation="@drawable/$ic_weather_sun__1" />
+    <target android:name="path_1" android:animation="@drawable/$ic_weather_sun__2" />
+    <target android:name="path_4" android:animation="@drawable/$ic_weather_sun__3" />
+    <target android:name="path_7" android:animation="@drawable/$ic_weather_sun__4" />
+    <target android:name="path_10" android:animation="@drawable/$ic_weather_sun__5" />
+    <target android:name="path_3" android:animation="@drawable/$ic_weather_sun__6" />
+    <target android:name="path_6" android:animation="@drawable/$ic_weather_sun__7" />
+    <target android:name="path_9" android:animation="@drawable/$ic_weather_sun__8" />
+    <target android:name="rays" android:animation="@drawable/$ic_weather_sun__9" />
+</animated-vector>

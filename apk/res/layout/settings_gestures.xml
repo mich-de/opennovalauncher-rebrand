@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/preference_button_actions" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_home" android:id="@id/homeButton" android:text="@string/preference_home_button" app:bind="gesture_home_button" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:icon="@drawable/ic_pref_blank" android:id="@id/homeButtonOnlyOnDefault" android:text="@string/preference_home_button_action_default_page_only" android:summary="@string/preference_home_button_action_default_page_only_summary" app:bind="gesture_home_button_only_on_default" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_menu" android:id="@id/longPressMenu" android:text="@string/preference_longpress_menu" app:bind="gesture_long_menu" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <TextView android:id="@id/header_gestures" android:text="@string/preference_header_gestures" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_up" android:id="@id/swipeUp" android:text="@string/gesture_swipe_up" app:bind="gesture_swipe_up" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_down" android:id="@id/swipeDown" android:text="@string/gesture_swipe_down" app:bind="gesture_swipe_down" app:requirePrime="true" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_left" android:id="@id/swipeLeft" android:text="@string/gesture_swipe_left" app:bind="gesture_swipe_left" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_right" android:id="@id/swipeRight" android:text="@string/gesture_swipe_right" app:bind="gesture_swipe_right" app:requirePrime="true" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_doubletap" android:id="@id/doubleTap" android:text="@string/gesture_double_tap" android:summary="%s" app:bind="gesture_double_tap" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_doubletap_swipe_up" android:id="@id/doubleTapUp" android:text="@string/gesture_double_tap_swipe_up" app:bind="gesture_double_tap_swipe_up" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_doubletap_swipe_down" android:id="@id/doubleTapDown" android:text="@string/gesture_double_tap_swipe_down" app:bind="gesture_double_tap_swipe_down" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_twoup" android:id="@id/twoUp" android:text="@string/gesture_swipe_up_two" app:bind="gesture_swipe_two_up" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_twodown" android:id="@id/twoDown" android:text="@string/gesture_swipe_down_two" app:bind="gesture_swipe_two_down" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_pinchin" android:id="@id/pinchIn" android:text="@string/gesture_pinch_in" app:bind="gesture_pinch_in" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_pinchout" android:id="@id/pinchOut" android:text="@string/gesture_pinch_out" app:bind="gesture_pinch_out" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_counterclockwise" android:id="@id/rotateCCW" android:text="@string/gesture_rotate_ccw" app:bind="gesture_rotate_ccw" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIntentView android:icon="@drawable/ic_gesture_clockwise" android:id="@id/rotateCW" android:text="@string/gesture_rotate_cw" app:bind="gesture_rotate_cw" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:minHeight="32.0dip" app:shadowAtBottom="false" />
+    </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="64.0" android:viewportHeight="64.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="line_1_group" android:translateX="4.0" android:translateY="36.0">
+        <path android:pathData="M0,0 L38,0z" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineJoin="round" />
+    </group>
+    <group android:name="line_2_group" android:translateX="12.0" android:translateY="44.0">
+        <path android:pathData="M0,0 L38,0z" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.0" android:strokeLineJoin="round" />
+    </group>
+    <clip-path android:pathData="M0,0 L0,32 L64,32, L64,0z" />
+    <group android:name="moon" android:pivotX="32.0" android:pivotY="32.0" android:scaleX="0.8" android:scaleY="0.8" android:translateY="-8.0">
+        <group android:name="dashed_outline" android:pivotX="32.0" android:pivotY="32.0" android:rotation="8.0">
+            <path android:fillColor="?weatherColorCloud" android:pathData="@string/weather_moon_dashed_outline" />
+        </group>
+        <group android:name="center" android:pivotX="32.0" android:pivotY="32.0">
+            <path android:pathData="@string/weather_moon_quarter" android:strokeColor="?weatherColorMoon" android:strokeWidth="5.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+        </group>
+    </group>
+</vector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.allapps.LauncherAllAppsContainerView android:theme="?allAppsTheme" android:id="@id/apps_view" android:focusable="false" android:saveEnabled="false" android:clipChildren="true" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/all_apps_rv_layout" />
+    <com.android.launcher3.allapps.FloatingHeaderView android:orientation="vertical" android:id="@id/all_apps_header" android:paddingTop="@dimen/all_apps_header_top_padding" android:paddingBottom="@dimen/all_apps_header_bottom_padding" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/app_search_results">
+        <include layout="@layout/floating_header_content" />
+        <include layout="@layout/nova_sliding_tab_strip" />
+    </com.android.launcher3.allapps.FloatingHeaderView>
+    <include android:id="@id/app_search_results" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_below="@id/search_container_all_apps" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" layout="@layout/app_search_results" />
+    <include layout="@layout/search_container_all_apps" />
+    <include layout="@layout/all_apps_fast_scroller" />
+</com.android.launcher3.allapps.LauncherAllAppsContainerView>

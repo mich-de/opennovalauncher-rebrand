@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:id="@id/buttonBar" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatButton android:textColor="@android:color/white" android:id="@id/button1" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/create_folder" android:layout_weight="1.0" style="?android:borderlessButtonStyle" />
+    <androidx.appcompat.widget.AppCompatButton android:textColor="@android:color/white" android:id="@id/button2" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/add" android:layout_weight="1.0" style="?android:borderlessButtonStyle" />
+</LinearLayout>

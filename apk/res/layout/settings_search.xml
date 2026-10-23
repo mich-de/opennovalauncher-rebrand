@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.preferences.fancyprefs.FancyPreviewLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/preview_frame" android:layout_width="fill_parent" android:layout_height="320.0dip" android:minHeight="320.0dip">
+        <include android:id="@id/search_preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" layout="@layout/app_search_results" />
+        <com.teslacoilsw.launcher.widget.SneezeGuardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:elevation="100.0dip" />
+        <ImageView android:layout_gravity="start|center|top" android:id="@id/back" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" android:contentDescription="@string/abc_action_bar_up_description" android:elevation="100.0dip" />
+    </FrameLayout>
+    <ScrollView android:id="@id/main_view" android:background="@color/windowBackground" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefColorView android:id="@id/search_background_color" android:text="@string/background_color" app:bind="appsearch_background" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIconView android:id="@id/night_mode_hint" android:text="@string/night_mode_settings_may_override" style="@style/FancyPrefHint" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCornerRadiusSeekBarView android:id="@id/search_window_radius" android:text="@string/search_window_corner_radius" app:bind="drawer_search_window_radius" app:format="%sdp" app:max="24" app:min="0" app:stepSize="2" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/nova_micro_results" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/nova_microresults" android:summary="@string/nova_microresults_summary" app:info="@string/nova_microresults_info" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/sesame" android:text="@string/sesame" android:summary="Use Sesame for non-app results, replaces OpenNova's native Contact and Shortcut search" android:widgetLayout="@layout/fancypref_widget_settings_and_check" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/autocomplete" android:text="@string/autocomplete_ddg" android:summary="@string/autocomplete_ddg_summary" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/contacts" android:visibility="gone" android:text="@string/contacts" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/deep_shortcuts" android:visibility="gone" android:text="@string/group_shortcuts" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/providers" android:text="@string/search_providers" android:fragment="com.teslacoilsw.launcher.preferences.fragments.SettingsSearchProviders" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:text="@string/private_keyboard" android:summary="@string/private_keyboard_summary" app:bind="drawer_search_keyboard_incognito" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+            <TextView android:text="@string/preference_search_bar" style="@style/SectionHeader" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/desktop_search_bar" android:text="@string/desktop_search_bar" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/drawer_search_bar" android:text="@string/drawer_search_bar" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="32.0dip" app:shadowAtBottom="false" />
+        </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+    </ScrollView>
+</com.teslacoilsw.launcher.preferences.fancyprefs.FancyPreviewLayout>

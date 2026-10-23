@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="48.0dip" app:cardBackgroundColor="@color/ai_sdk_card_background" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip" app:strokeColor="@color/ai_sdk_input_border" app:strokeWidth="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ai_sdk_ic_alert_triangle" android:contentDescription="@null" />
+            <com.instabridge.ai.chat.ui.InteractiveChatTextView android:textSize="14.0sp" android:textColor="@color/ai_sdk_secondary_color" android:textColorHighlight="@color/ai_sdk_text_selection_highlight" android:textColorLink="@color/ai_sdk_link_color" android:id="@id/actionTypeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <com.instabridge.ai.chat.ui.InteractiveChatTextView android:textSize="16.0sp" android:textColor="@color/ai_sdk_content_color" android:textColorHighlight="@color/ai_sdk_text_selection_highlight" android:textColorLink="@color/ai_sdk_link_color" android:id="@id/messageText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:textIsSelectable="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttonsRow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <Button android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/confirmButton" android:background="@drawable/ai_sdk_button_primary" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/ai_sdk_tool_confirm" android:layout_weight="1.0" android:textAllCaps="false" />
+            <View android:layout_width="8.0dip" android:layout_height="0.0dip" />
+            <Button android:textSize="14.0sp" android:textColor="@color/ai_sdk_content_color" android:id="@id/cancelButton" android:background="@drawable/ai_sdk_button_secondary" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/ai_sdk_tool_cancel" android:layout_weight="1.0" android:textAllCaps="false" />
+        </LinearLayout>
+        <com.instabridge.ai.chat.ui.InteractiveChatTextView android:textSize="13.0sp" android:textColorHighlight="@color/ai_sdk_text_selection_highlight" android:textColorLink="@color/ai_sdk_link_color" android:id="@id/completedLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:textIsSelectable="true" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_title_color" android:id="@id/quotaTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ai_sdk_quota_title" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ai_sdk_content_color" android:id="@id/quotaMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:id="@id/quotaResetText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    <ProgressBar android:id="@id/quotaUsageBar" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_marginTop="16.0dip" android:max="100" android:progressDrawable="@drawable/ai_sdk_quota_progress" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/ai_sdk_muted_color" android:id="@id/quotaUsageText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    <Button android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/quotaUpgradeButton" android:background="@drawable/ai_sdk_share_button_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="16.0dip" android:text="@string/ai_sdk_upgrade" android:textAllCaps="false" />
+    <Button android:textSize="15.0sp" android:textColor="@color/ai_sdk_secondary_color" android:id="@id/quotaDismissButton" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="8.0dip" android:text="@string/ai_sdk_quota_ok" android:textAllCaps="false" />
+</LinearLayout>

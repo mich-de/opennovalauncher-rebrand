@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ai_sdk_profile_card_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_title_color" android:id="@id/planCardName" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_brand_peach" android:id="@id/planCardBadge" android:background="@drawable/ai_sdk_pro_badge_bg" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sdk_model_pro_badge" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" android:layout_marginStart="6.0dip" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:id="@id/planCardPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+    </LinearLayout>
+    <ImageView android:id="@id/planCardCheck" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ai_sdk_ic_check" android:layout_marginStart="12.0dip" />
+    <Button android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_title_color" android:id="@id/planCardSelect" android:background="@drawable/ai_sdk_profile_outline_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="@string/ai_sdk_plan_select" android:textAllCaps="false" android:layout_marginStart="12.0dip" android:paddingHorizontal="16.0dip" />
+</LinearLayout>

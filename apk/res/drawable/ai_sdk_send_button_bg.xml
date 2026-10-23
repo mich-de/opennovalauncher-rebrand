@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/ai_sdk_action_button_ripple"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient android:startColor="@color/ai_sdk_brand_orange" android:endColor="@color/ai_sdk_brand_violet" android:angle="315.0" android:type="linear" android:centerColor="@color/ai_sdk_brand_peach" />
+        </shape>
+    </item>
+</ripple>

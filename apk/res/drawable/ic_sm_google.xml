@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_sm_bg_light_circle" />
+    <item>
+        <inset android:drawable="@drawable/ic_sm_fg_google" android:inset="12.0dip" />
+    </item>
+</layer-list>

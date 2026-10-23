@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.widget.DumbRadioGrid android:gravity="center" android:orientation="horizontal" android:id="@id/shape_group" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="-1" app:canSqueezeOneExtra="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioButton android:id="@id/shape_square" android:layout_width="88.0dip" android:text="@string/icon_shape_square" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_teardrop" android:layout_width="88.0dip" android:text="@string/icon_shape_teardrop" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_pebble" android:layout_width="88.0dip" android:text="@string/icon_shape_pebble" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_vessel" android:layout_width="88.0dip" android:text="@string/icon_shape_vessel" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_pentagon" android:layout_width="88.0dip" android:text="@string/icon_shape_pentagon" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_hexagon" android:layout_width="88.0dip" android:text="@string/icon_shape_hexagon" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_hexagon_90" android:layout_width="88.0dip" android:text="@string/icon_shape_hexagon" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_heptagon" android:layout_width="88.0dip" android:text="@string/icon_shape_heptagon" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_octagon" android:layout_width="88.0dip" android:text="@string/icon_shape_octagon" style="@style/RadioIconButton" />
+    <RadioButton android:id="@id/shape_tapered" android:layout_width="88.0dip" android:text="@string/icon_shape_tapered" style="@style/RadioIconButton" />
+</com.teslacoilsw.launcher.widget.DumbRadioGrid>

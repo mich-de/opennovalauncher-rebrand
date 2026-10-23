@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.widget.RippleScrollView android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCornerRadiusSeekBarView android:id="@id/custom_topleft_corner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/top_left" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:cornerIndex="topLeft" app:max="50" app:preferenceRowLayout="@layout/fancypref_seekbar_row_shape_customizer" app:stepSize="5" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:layout_gravity="bottom" android:id="@id/custom_topleft_corner_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_weight="0.0" app:entries="@array/corner_type" app:entryValues="@array/corner_type_values" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCornerRadiusSeekBarView android:id="@id/custom_topright_corner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/top_right" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:cornerIndex="topRight" app:max="50" app:preferenceRowLayout="@layout/fancypref_seekbar_row_shape_customizer" app:stepSize="5" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:layout_gravity="bottom" android:id="@id/custom_topright_corner_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_weight="0.0" app:entries="@array/corner_type" app:entryValues="@array/corner_type_values" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/custom_bottomleft">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCornerRadiusSeekBarView android:id="@id/custom_bottomleft_corner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bottom_left" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:cornerIndex="bottomLeft" app:max="50" app:preferenceRowLayout="@layout/fancypref_seekbar_row_shape_customizer" app:stepSize="5" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:layout_gravity="bottom" android:id="@id/custom_bottomleft_corner_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_weight="0.0" app:entries="@array/corner_type" app:entryValues="@array/corner_type_values" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/custom_bottomright">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCornerRadiusSeekBarView android:id="@id/custom_bottomright_corner" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/bottom_right" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:cornerIndex="bottomRight" app:max="50" app:preferenceRowLayout="@layout/fancypref_seekbar_row_shape_customizer" app:stepSize="5" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:layout_gravity="bottom" android:id="@id/custom_bottomright_corner_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_weight="0.0" app:entries="@array/corner_type" app:entryValues="@array/corner_type_values" />
+        </LinearLayout>
+    </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+</com.teslacoilsw.launcher.widget.RippleScrollView>

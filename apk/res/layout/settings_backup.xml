@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/backup" android:text="@string/preference_backup" android:summary="@string/preference_backup_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIconView android:id="@id/share_backup" android:src="@drawable/ic_action_share" android:text="@string/share_backup" android:summary="@string/share_backup_summary" app:widgetIconTint="?android:textColorPrimary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/restore" android:text="@string/preference_restore_manage" android:summary="@string/preference_restore_manage_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIconView android:id="@id/path" android:visibility="gone" android:text="@string/backup_previous_default" android:summary=":data/com.teslacoilsw.launcher/backup" app:widgetIconTint="?android:textColorPrimary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/onboarding" android:text="@string/preset_quickstart" android:summary="@string/preset_quickstart_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/reset_to_defaults" android:text="@string/reset_to_defaults" android:summary="@string/reset_to_defaults_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="32.0dip" app:shadowAtBottom="false" />
+    </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+</ScrollView>

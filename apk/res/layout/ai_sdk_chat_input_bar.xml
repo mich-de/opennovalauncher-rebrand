@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/transparent" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/inputContainer" android:background="@drawable/ai_sdk_chat_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="4.0dip" android:elevation="4.0dip">
+            <EditText android:textSize="15.0sp" android:textColor="@color/ai_sdk_content_color" android:textColorHint="@color/ai_sdk_muted_color" android:id="@id/chatInputEditText" android:background="@android:color/transparent" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/ai_sdk_chat_input_min_height" android:hint="@string/ai_sdk_chat_hint" android:maxLines="12" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionSend" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+            <ImageButton android:enabled="false" android:id="@id/chatSendButton" android:background="@drawable/ai_sdk_send_button_bg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ai_sdk_ic_send" android:scaleType="center" android:contentDescription="@string/ai_sdk_send" android:alpha="@dimen/ai_sdk_send_button_disabled_alpha" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

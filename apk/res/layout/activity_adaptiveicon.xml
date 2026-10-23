@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.preferences.fancyprefs.FancyPreviewLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/preview_frame" android:layout_width="fill_parent" android:layout_height="200.0dip" android:minHeight="200.0dip">
+        <LinearLayout android:id="@id/preview_icons" android:paddingLeft="8.0dip" android:paddingTop="56.0dip" android:paddingRight="8.0dip" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/settings_horizontal_padding" android:layout_marginRight="@dimen/settings_horizontal_padding">
+            <com.android.launcher3.views.DoubleShadowBubbleTextView android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Settings" android:layout_weight="1.0" style="@style/WorkspaceIcon.Portrait" />
+            <com.android.launcher3.views.DoubleShadowBubbleTextView android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Calculator" android:layout_weight="1.0" style="@style/WorkspaceIcon.Portrait" />
+            <com.android.launcher3.views.DoubleShadowBubbleTextView android:gravity="center" android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Adaptive" android:layout_weight="1.0" style="@style/WorkspaceIcon.Portrait" />
+            <com.android.launcher3.views.DoubleShadowBubbleTextView android:gravity="center" android:layout_gravity="center" android:id="@id/legacy_icon" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Legacy" android:layout_weight="1.0" style="@style/WorkspaceIcon.Portrait" />
+        </LinearLayout>
+        <com.teslacoilsw.launcher.widget.SneezeGuardView android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignTop="@id/preview_icons" android:layout_alignBottom="@id/preview_icons" android:layout_alignStart="@id/preview_icons" android:layout_alignEnd="@id/preview_icons" />
+        <ProgressBar android:id="@id/progress_bar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="64.0dip" android:layout_marginBottom="64.0dip" />
+        <ImageView android:id="@id/back" android:background="?selectableItemBackgroundBorderless" android:paddingLeft="4.0dip" android:paddingTop="16.0dip" android:paddingRight="4.0dip" android:paddingBottom="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" android:layout_alignParentTop="true" android:contentDescription="@string/abc_action_bar_up_description" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/content" android:background="@color/windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ScrollView android:id="@id/main_view" android:paddingLeft="@dimen/settings_horizontal_padding" android:paddingRight="@dimen/settings_horizontal_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIconView android:id="@id/icon_theme" android:tint="#00000000" android:text="@string/preference_icon_theme" android:summary="%s" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/icon_theme_masking" android:text="@string/icon_theme_autogen" android:summary="@string/icon_theme_autogen_long" app:bind="icon_theme_masking" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/adaptive_header" android:text="@string/pref_adaptive_icons" app:labelStyle="@style/SectionHeader" />
+                <TextView android:id="@id/adaptive_icon_theme_hint" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:text="@string/applied_theme_precendence" />
+                <TextView android:textSize="14.0sp" android:textColor="?android:textColorSecondary" android:text="@string/icon_shape" style="@style/SectionHeader" />
+                <com.teslacoilsw.launcher.widget.DumbRadioGrid android:gravity="center" android:orientation="horizontal" android:id="@id/shape_group" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:columnCount="-1" app:canSqueezeOneExtra="false">
+                    <RadioButton android:id="@id/shape_default" android:layout_width="88.0dip" android:text="@string/pref_night_mode_follow_system" style="@style/RadioIconButton" />
+                    <RadioButton android:id="@id/shape_circle" android:layout_width="88.0dip" android:text="@string/icon_shape_round" style="@style/RadioIconButton" />
+                    <RadioButton android:id="@id/shape_squircle" android:layout_width="88.0dip" android:text="@string/icon_shape_squircle" style="@style/RadioIconButton" />
+                    <RadioButton android:id="@id/shape_rounded_square" android:layout_width="88.0dip" android:text="@string/icon_shape_rounded_square" style="@style/RadioIconButton" />
+                    <RadioButton android:id="@id/shape_flower" android:layout_width="88.0dip" android:text="@string/icon_shape_flower" style="@style/RadioIconButton" />
+                    <RadioButton android:id="@id/shape_custom" android:layout_width="88.0dip" android:text="@string/custom" style="@style/RadioIconButton" />
+                    <RadioButton android:id="@id/shape_more" android:layout_width="88.0dip" android:layout_height="fill_parent" android:text="@string/more" android:drawableTop="@drawable/ic_adaptive_shape_customize" style="@style/RadioIconButton" />
+                    <TextView android:id="@id/customize" android:layout_width="88.0dip" android:layout_height="fill_parent" android:text="@string/customize" android:drawableTop="@drawable/ic_adaptive_shape_customize" style="@style/RadioIconButton" />
+                </com.teslacoilsw.launcher.widget.DumbRadioGrid>
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/reshape_legacy" android:text="@string/reshape_legacy_icons" android:summary="@string/reshape_legacy_icons_summary" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:id="@id/reshape_legacy_spinner" android:text="@string/reshape_legacy_icons" android:summary="@string/reshape_legacy_icons_summary" app:entries="@array/pref_reshape_legacy" app:entryValues="@array/pref_reshape_legacy_values" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/adaptive_icon_animations" android:text="@string/adaptive_icon_animations" android:summary="@string/adaptive_icon_animations_summary" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/shadows" android:text="@string/shadow" android:summary="@string/icon_shadow_summary" app:bind="icon_normalization_shadows" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/prefer_legacy" android:text="@string/adaptive_icon_prefer_legacy_icons" android:summary="@string/adaptive_icon_prefer_legacy_icons_summary" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/normalize" android:text="@string/normalize_icon_size" android:summary="@string/normalize_icon_size_summary" app:bind="icon_normalization" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:minHeight="32.0dip" app:shadowAtBottom="false" />
+                <FrameLayout android:id="@id/extra_bottom_padding_view" android:background="@color/cardIdleBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/custom_shape_settings" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIconView android:icon="@drawable/ic_menu_done" android:id="@id/custom_header" android:background="@color/theme_color_primary_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:src="@drawable/ic_colorpicker_advanced" android:text="@string/custom" app:labelStyle="@style/SectionHeaderWhiteText" app:widgetIconTint="#ffffffff" />
+            <include android:id="@id/shape_customizer" layout="@layout/shape_customizer" />
+        </LinearLayout>
+    </FrameLayout>
+</com.teslacoilsw.launcher.preferences.fancyprefs.FancyPreviewLayout>

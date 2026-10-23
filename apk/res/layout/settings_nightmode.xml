@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:id="@id/night_mode_schedule" android:text="@string/pref_night_mode" app:bind="night_mode" app:entries="@array/pref_night_mode" app:entryValues="@array/pref_night_mode_values" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/night_mode_location" android:text="@string/pref_night_mode_location" android:summary="@string/pref_night_mode_location_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefNightModeView android:id="@id/night_mode_bg_color" android:text="@string/dark_theme_color" app:bind="night_mode_bg_color" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <TextView android:text="@string/when_night_mode_is_on_use_dark_theme_for" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/night_mode_folders" android:text="@string/folders" app:bind="night_mode_auto_folder" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/night_mode_searchbar" android:text="@string/desktop_search_bar" app:bind="night_mode_auto_searchbar" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/night_mode_searchbar_drawer" android:text="@string/drawer_search_bar" app:bind="night_mode_auto_drawer_searchbar" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/night_mode_search_window" android:text="@string/search_window" app:bind="night_mode_auto_search_window" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/night_mode_drawer" android:text="@string/preference_header_drawer" app:bind="night_mode_auto_drawer" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/night_mode_drawer_icon" android:background="@drawable/wip_item_background_material" android:visibility="gone" android:text="@string/drawer_icon" app:bind="night_mode_auto_drawer_icon" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="32.0dip" app:requireRestart="true" app:shadowAtBottom="false" />
+    </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+</ScrollView>

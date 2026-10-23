@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_new_chat" android:title="@string/ai_sdk_chat_new" app:showAsAction="never" />
+    <item android:id="@id/action_view_all" android:title="@string/ai_sdk_chat_view_all" app:showAsAction="never" />
+    <item android:id="@id/action_share_chat" android:title="@string/ai_sdk_chat_share" app:showAsAction="never" />
+    <item android:id="@id/action_delete_chat" android:title="@string/ai_sdk_chat_delete" app:showAsAction="never" />
+</menu>

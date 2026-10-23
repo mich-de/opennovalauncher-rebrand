@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:name="vector" android:tint="?android:textColorPrimary" android:height="24.0dip" android:width="24.0dip" android:autoMirrored="true" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:name="path_circle" android:pathData="@string/widgetsearch_path_circle" android:strokeColor="#ffffffff" android:strokeWidth="1.8" android:strokeLineCap="square" />
+    <path android:name="path_square_1" android:pathData="@string/widgetsearch_path_square_1" android:strokeColor="#ffffffff" android:strokeWidth="1.8" android:strokeLineCap="square" />
+    <path android:name="path_square_2" android:pathData="@string/widgetsearch_path_square_2" android:strokeColor="#ffffffff" android:strokeWidth="1.8" android:strokeLineCap="square" />
+    <path android:name="path_handle" android:fillColor="#ffffffff" android:pathData="@string/widgetsearch_path_handle" android:strokeColor="#ffffffff" android:strokeLineCap="square" />
+</vector>

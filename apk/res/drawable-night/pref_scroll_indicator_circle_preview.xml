@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/pref_scroll_indicator_circle_preview_alpha" android:tint="@color/pref_scroll_indicator_preview_tint" app:tintMode="multiply"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

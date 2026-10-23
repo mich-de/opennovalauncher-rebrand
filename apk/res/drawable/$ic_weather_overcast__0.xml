@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="64.0" android:viewportHeight="64.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="cloud_1" android:pivotX="32.0" android:pivotY="32.0" android:scaleX="-0.58" android:scaleY="0.58" android:translateX="12.0" android:translateY="-4.0">
+        <path android:name="cloud_1_path" android:pathData="@string/weather_cloud" android:strokeColor="?weatherColorMoon" android:strokeWidth="3.45" android:trimPathStart="0.2" android:trimPathEnd="0.55" android:strokeLineJoin="round" />
+    </group>
+    <group android:name="cloud_2" android:pivotX="32.0" android:pivotY="32.0" android:scaleX="0.93" android:scaleY="0.93" android:translateX="-4.0">
+        <path android:pathData="@string/weather_cloud" android:strokeColor="?weatherColorCloud" android:strokeWidth="3.22" android:strokeLineJoin="round" />
+    </group>
+</vector>

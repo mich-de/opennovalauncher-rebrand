@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/enableDock" android:background="@color/switcher_bar_background_color" android:checked="true" android:foreground="?selectableItemBackground" android:text="@string/enable" app:checkMode="toggle_switch" app:labelStyle="@style/TextAppearance.AppCompat.Title" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIconView android:id="@id/hintGesture" style="@style/FancyPrefHint" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/dockBackground" android:text="@string/dock_style" android:fragment="com.teslacoilsw.launcher.preferences.fragments.SettingsDockBackground" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefNumberPickerDialog android:id="@id/dock_pages" android:text="@string/preference_dock_pages" android:summary="%s" app:format="%s" app:max="5" app:min="1" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefGridView android:id="@id/dockIcons" android:minHeight="64.0dip" android:text="@string/preference_dock_icons" android:summary="%2$d" app:dialogLayout="@layout/dialog_preference_dock_icons" app:maxCols="@integer/dock_max_items" app:maxRows="1" app:minCols="2" app:minRows="1" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/iconLayout" android:text="@string/preference_icon_layout" app:searchKeywords="@string/preference_icon_layout_search_keywords" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefPaddingView android:id="@id/padding" android:text="@string/quickmenu_padding" app:containerType="hotseat" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/infiniteScroll" android:text="@string/preference_infinite_scroll" app:bind="dock_infinite_scroll" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefExpanderView android:id="@id/advanced" android:text="@string/advanced" app:includeInSearch="never" app:labelStyle="@style/SectionHeader">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/dockOverlay" android:text="@string/preference_dock_as_overlay" android:summary="@string/preference_dock_as_overlay_summary" app:bind="dock_overlay" app:checkMode="toggle_switch" app:requireRestart="true" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/dockAutoClose" android:text="@string/preference_close_after_launch" android:summary="@string/preference_close_after_launch_summary" app:bind="dock_autoclose" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/dockRememberPosition" android:text="@string/preference_drawer_user_reset" app:bind="dock_remember_position" />
+        </com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefExpanderView>
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:layout_height="fill_parent" android:minHeight="32.0dip" app:shadowAtBottom="false" />
+    </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+</ScrollView>

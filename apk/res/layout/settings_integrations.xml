@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/google_header" android:text="@string/nova_action_google_now" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/google_now_page_bezel_swipe" android:text="@string/google_now_bezel_swipe" android:summary="@string/google_now_bezel_swipe_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:id="@id/google_now_theme" android:text="@string/google_now_theme" app:bind="google_now_theme" app:entries="@array/pref_google_now_theme" app:entryValues="@array/pref_google_now_theme_values" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSummaryListView android:id="@id/google_now_transition" android:visibility="gone" android:text="@string/preference_transition_animation" android:summary="%s" app:bind="google_now_transition" app:entries="@array/pref_google_now_transition" app:entrySummaries="@array/pref_google_now_transition_summaries" app:entryValues="@array/pref_google_now_transition_values" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/google_require_companion" android:visibility="gone" android:text="@string/google_now_feed" android:summary="@string/google_require_companion" app:includeInSearch="always" app:searchKeywords="Google Now" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/companion_version" android:text="OpenNova Google Companion APK" android:summary="@string/preference_version_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/google_version" android:text="Google App" android:summary="@string/google_app_outofdate" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/restart" android:text="@string/restart_google_and_companion" android:summary="@string/restart_google_and_companion_summary" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:id="@id/google_separator" />
+        <TextView android:text="Sesame Shortcuts" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/sesame_permission" android:text="@string/permission_required" android:summary="@string/permission_sesame" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/sesame_app_search" android:text="@string/sesame_shortcuts_in_app_search" android:summary="@string/sesame_shortcuts_in_app_search_long" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/sesame_shortcut_menu" android:text="@string/sesame_shortcuts_in_menu" android:summary="@string/sesame_shortcuts_in_menu_long" app:bind="sesame_shortcut_menu" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/sesame_app" android:text="Sesame Shortcuts" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="32.0dip" app:shadowAtBottom="false" />
+    </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+</ScrollView>

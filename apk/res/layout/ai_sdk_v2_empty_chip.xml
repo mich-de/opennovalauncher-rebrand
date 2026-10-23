@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/ai_sdk_v2_initial_chip_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/ai_sdk_v2_source_icon_chip" android:layout_width="32.0dip" android:layout_height="32.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/v2InitialChipIcon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:contentDescription="@null" app:tint="@color/ai_sdk_v2_text_primary" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/ai_sdk_v2_text_primary" android:id="@id/v2InitialChipLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" android:layout_marginStart="14.0dip" android:letterSpacing="-0.01" />
+    <ImageView android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_ai_arrow_up_right_v2" android:contentDescription="@null" android:layout_marginStart="8.0dip" app:tint="@color/ai_sdk_v2_text_tertiary" />
+</LinearLayout>

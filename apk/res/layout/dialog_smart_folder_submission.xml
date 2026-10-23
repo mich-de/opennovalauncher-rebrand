@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingTop="4.0dip" android:paddingRight="0.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center_vertical" android:id="@id/dialog_desciption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="8.0dip" android:text="@string/smart_folders_submission_description" style="@style/TextAppearance.AppCompat.Medium" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="24.0dip" android:paddingVertical="8.0dip">
+        <TextView android:textColor="#fff0f0f0" android:ellipsize="none" android:gravity="start|center|top" android:id="@id/submission_payload" android:background="#ff0a0a0a" android:scrollbars="horizontal|vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="256.0dip" android:scrollHorizontally="true" android:fontFamily="monospace" style="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+    <com.teslacoilsw.launcher.widget.NovaCheckBox android:id="@id/remember_my_choice_checkbox" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:checked="false" android:text="@string/remember_my_choice" style="@style/Widget.AppCompat.CompoundButton.CheckBox" />
+</LinearLayout>

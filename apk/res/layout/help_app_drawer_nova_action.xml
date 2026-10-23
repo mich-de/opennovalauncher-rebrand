@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/md_content_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:theme="@style/OpenNova.Dark" android:icon="@drawable/ic_allapps" android:background="@color/quantum_panel_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nova_action" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/use_app_drawer_action" />
+</LinearLayout>

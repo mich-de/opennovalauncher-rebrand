@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="@color/ai_sdk_source_index_text" android:id="@id/sourceIndex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="monospace" android:layout_marginEnd="6.0dip" />
+    <ImageView android:id="@id/sourceBookIcon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ai_sdk_ic_book" android:contentDescription="@null" android:alpha="0.6" android:layout_marginEnd="6.0dip" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_link_color" android:ellipsize="end" android:id="@id/sourceTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+</LinearLayout>

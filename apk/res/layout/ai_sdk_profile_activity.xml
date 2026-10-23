@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ai_sdk_profile_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:id="@id/profileToolbar" android:background="@color/ai_sdk_profile_background" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/profileLoading" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="48.0dip" android:indeterminateTint="@color/ai_sdk_brand_violet" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/ai_sdk_muted_color" android:gravity="center" android:id="@id/profileError" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/ai_sdk_profile_loading_error" />
+    <ScrollView android:id="@id/profileScrollView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:paddingTop="8.0dip" android:paddingBottom="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+            <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ai_sdk_profile_title" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/ai_sdk_secondary_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/ai_sdk_profile_subtitle" />
+            <FrameLayout android:id="@id/accountSectionContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+            <FrameLayout android:id="@id/subscriptionSectionContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+            <FrameLayout android:id="@id/consentSectionContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:id="@id/footerSupport" android:background="?android:selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sdk_profile_footer_support" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" · " android:paddingHorizontal="4.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:id="@id/footerPrivacy" android:background="?android:selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sdk_profile_footer_privacy" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

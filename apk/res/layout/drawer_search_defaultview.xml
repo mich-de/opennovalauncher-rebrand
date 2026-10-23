@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.widget.SlidingTabIndicatorScrollView android:layout_gravity="center_horizontal" android:id="@id/tab_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" app:bottomBarHeight="0.0dip" app:indicatorHeight="2.0dip" app:indicatorMinWidth="20.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="@dimen/apps_customize_tab_bar_height" android:layout_marginTop="@dimen/apps_customize_tab_bar_margin_top" android:divider="@null">
+            <TextView android:textSize="@dimen/settings_tab_textsize" android:textColor="@color/liam_gray" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/drawer_search_frequent" android:layout_weight="1.0" style="@style/TabIndicator" />
+            <TextView android:textSize="@dimen/settings_tab_textsize" android:textColor="@color/liam_gray" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/drawer_search_recent" android:layout_weight="1.0" style="@style/TabIndicator" />
+            <TextView android:textSize="@dimen/settings_tab_textsize" android:textColor="@color/liam_gray" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/drawer_search_new_updated" android:layout_weight="1.0" style="@style/TabIndicator" />
+        </LinearLayout>
+    </com.teslacoilsw.launcher.widget.SlidingTabIndicatorScrollView>
+    <com.teslacoilsw.launcher.widget.PagedViewSimple android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

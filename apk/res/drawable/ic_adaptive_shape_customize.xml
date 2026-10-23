@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/btn_radio_drawable_color" android:pathData="M15 29v2h6v-2h-6zm0-12v2h10v-2H15zm10 16v-2h8v-2h-8v-2h-2v6h2zm-6-12v2h-4v2h4v2h2v-6h-2zm14 4v-2H23v2h10zm-6-4h2v-2h4v-2h-4v-2h-2v6z" />
+</vector>

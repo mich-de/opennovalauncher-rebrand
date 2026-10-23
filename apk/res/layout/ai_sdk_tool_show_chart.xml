@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="48.0dip" app:cardBackgroundColor="@color/ai_sdk_card_background" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip" app:strokeColor="@color/ai_sdk_input_border" app:strokeWidth="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.instabridge.ai.chat.ui.InteractiveChatTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_content_color" android:textColorHighlight="@color/ai_sdk_text_selection_highlight" android:textColorLink="@color/ai_sdk_link_color" android:id="@id/chartTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textIsSelectable="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dataContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

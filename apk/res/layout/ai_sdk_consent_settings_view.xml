@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="12.0dip">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sdk_profile_personalization_title" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/ai_sdk_profile_personalization_desc" />
+        </LinearLayout>
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/masterToggle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/ai_sdk_switch_thumb" app:track="@drawable/ai_sdk_switch_track" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/perTypeContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ai_sdk_profile_choose_data" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_brand_violet" android:id="@id/allOnButton" android:background="?android:selectableItemBackgroundBorderless" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sdk_profile_all_on" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/ai_sdk_secondary_color" android:id="@id/allOffButton" android:background="?android:selectableItemBackgroundBorderless" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sdk_profile_all_off" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/toggleItemsContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:id="@id/drawer_open_mode" android:text="@string/open_app_drawer" app:entries="@array/pref_drawer_open_mode" app:entryValues="@array/pref_drawer_open_mode_values" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/swipe_to_open_indicator" android:text="@string/preference_swipe_indicator" android:summary="@string/preference_swipe_indicator_summary" app:bind="drawer_swipe_indicator" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <TextView android:text="@string/preference_category_layout" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:id="@id/drawerStyle" android:text="@string/preference_drawer_style" app:entries="@array/pref_drawer_style" app:entryValues="@array/pref_drawer_style_values" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefLandGridView android:id="@id/grid" android:text="@string/preference_drawer_app_grid" app:maxCols="@integer/desktop_grid_maxCellCountX" app:maxRows="@integer/desktop_grid_maxCellCountY" app:minCols="2" app:minRows="2" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/iconLayout" android:text="@string/preference_icon_layout" app:searchKeywords="@string/preference_icon_layout_search_keywords" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:title="Color Scheme" android:fragment="com.teslacoilsw.launcher.composeui.preferences.SurfaceColorPicker" app:fragmentExtra="drawer" style="@style/FancyPrefHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefIconView android:id="@id/night_mode_hint" android:text="@string/night_mode_settings_may_override" style="@style/FancyPrefHint" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/predictiveApps" android:text="@string/preference_drawer_predictive" android:summary="@string/preference_drawer_predictive_summary" app:bind="drawer_predictive_apps" app:checkMode="toggle_switch" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefDrawerAnimDialog android:id="@id/drawer_animation" android:text="@string/preference_transition_animation" android:summary="%s" app:bind="drawer_animation" app:dialogLayout="@layout/dialog_preference_draweranimation" app:entries="@array/pref_transition_animation" app:entryValues="@array/pref_transition_animation_values" app:requireConfirmation="true" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:id="@id/tab_bar_position" android:text="@string/tab_bar_placement" app:bind="drawer_tabbar_position" app:entries="@array/pref_drawer_bar_position" app:entryValues="@array/pref_drawer_bar_position_values" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSpinnerView android:id="@id/search_bar_position" android:text="@string/search_bar_placement" app:bind="drawer_searchbar_position" app:entries="@array/pref_drawer_bar_position" app:entryValues="@array/pref_drawer_bar_position_values" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:id="@id/tabBarOptions">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSummaryListMultiView android:id="@id/drawerMenuActions" android:text="@string/preference_drawer_menu_action" android:summary="%s" app:entries="@array/pref_drawer_menu_actions" app:entryIcons="@array/pref_drawer_menu_action_icons" app:entryValues="@array/pref_drawer_menu_action_values" app:includeInSearch="never" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/isolateTabs" android:text="@string/preference_isolate_tabs" android:summary="@string/preference_isolate_tabs_summary" app:bind="drawer_isolate_tabs" app:requireRestart="true" />
+        </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+        <com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout android:orientation="vertical" android:id="@id/searchBarOptions" android:visibility="gone">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/searchbarStyle" android:text="@string/pref_search_bar_style" android:summary="@string/pref_search_bar_style_summary" />
+        </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/header_gestures" android:visibility="gone" android:text="@string/preference_header_gestures" app:labelStyle="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/pullToSearch" android:text="@string/preference_drawer_pull_to_search" android:summary="@string/preference_drawer_pull_to_search_summary" app:bind="drawer_pull_to_search" app:checkMode="toggle_switch" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <TextView android:text="@string/preference_scroll" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/drawerFastScroll" android:text="@string/preference_fastscroll_enabled" android:summary="@string/preference_fastscroll_enabled_summary" app:bind="drawer_fastscroll" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefColorView android:id="@id/drawerFastScrollColor" android:text="@string/preference_fastscroll_color" android:summary="@string/preference_fastscroll_color_summary" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefExpanderView android:text="@string/horizontal_scroll" app:labelStyle="@style/SectionHeader">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/infinite_scroll" android:text="@string/preference_infinite_scroll" app:bind="drawer_infinite_scroll" app:requireRestart="true" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefSummaryListView android:id="@id/scroll_effect" android:text="@string/preference_scroll_effect" android:summary="@string/preference_scroll_effect_summary" app:bind="drawer_scroll_effect" app:dialogLayout="@layout/dialog_scrolleffect" app:entries="@array/pref_scroll_effect_prime" app:entryValues="@array/pref_scroll_effect_values" app:requireConfirmation="true" />
+        </com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefExpanderView>
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <TextView android:text="@string/all_apps_button_label" style="@style/SectionHeader" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/hideApps" android:text="@string/hide_apps" android:summary="@string/hide_apps_summary" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/drawerGroups" android:text="@string/preference_configure_tabs" android:summary="@string/preference_configure_tabs_summary" app:requirePrime="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/folderBeforeApps" android:text="@string/preference_folders_first" android:summary="@string/preference_folders_first_summary_on" app:bind="drawer_folders_first" app:requirePrime="true" app:requireRestart="true" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/drawer_work_tab" android:text="@string/work_apps_in_their_own_tab" app:bind="drawer_work_tab" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefExpanderView android:text="@string/advanced" app:includeInSearch="never" app:labelStyle="@style/SectionHeader">
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/autoClose" android:text="@string/preference_close_after_launch" android:summary="@string/preference_close_after_launch_drawer_summary" app:bind="drawer_autoclose" />
+            <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/rememberPosition" android:text="@string/preference_drawer_user_reset" android:summary="@string/preference_drawer_user_reset_summary" app:bind="drawer_remember_position" />
+        </com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefExpanderView>
+        <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:minHeight="32.0dip" app:shadowAtBottom="false" />
+    </com.teslacoilsw.launcher.preferences.widget.MatchWrapLinearLayout>
+</ScrollView>

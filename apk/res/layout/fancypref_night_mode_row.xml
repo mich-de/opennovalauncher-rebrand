@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:gravity="center" android:id="@id/title" android:paddingBottom="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="48.0dip" android:layout_marginStart="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/FancyPrefTitle" />
+    <com.teslacoilsw.launcher.widget.DumbRadioGrid android:id="@id/palette_radiogrid" android:paddingTop="64.0dip" android:paddingBottom="12.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content" android:columnCount="3" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.teslacoilsw.launcher.preferences.fancyprefs.color.ColorSwatchRadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#303030" android:color="#ff303030" style="@style/ColorSwatchRadioButton" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.color.ColorSwatchRadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#121212" android:color="#ff121212" />
+        <com.teslacoilsw.launcher.preferences.fancyprefs.color.ColorSwatchRadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\#000000" android:color="#ff000000" />
+    </com.teslacoilsw.launcher.widget.DumbRadioGrid>
+</merge>

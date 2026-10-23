@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/adaptive_icon_background_ring" />
+    <foreground>
+        <inset android:inset="20.000004%">
+            <adaptive-icon>
+                <background android:drawable="@color/adaptive_icon_background" />
+                <foreground>
+                    <bitmap android:src="@mipmap/adaptive_foreground_settings" />
+                </foreground>
+            </adaptive-icon>
+        </inset>
+    </foreground>
+</adaptive-icon>

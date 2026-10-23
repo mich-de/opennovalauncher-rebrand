@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/$ic_weather_sunset__0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <target android:name="path_3" android:animation="@drawable/$ic_weather_sunset__1" />
+    <target android:name="path_9" android:animation="@drawable/$ic_weather_sunset__2" />
+    <target android:name="rays" android:animation="@drawable/$ic_weather_sunset__3" />
+</animated-vector>

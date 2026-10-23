@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.widget.IsMeasuringGridView android:id="@id/gridview" android:paddingLeft="@dimen/themedrawable_horizontal_padding" android:paddingTop="16.0dip" android:paddingRight="@dimen/themedrawable_horizontal_padding" android:paddingBottom="16.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="?selectableItemBackgroundBorderless" android:drawSelectorOnTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

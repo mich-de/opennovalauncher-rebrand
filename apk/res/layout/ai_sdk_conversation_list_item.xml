@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/ai_sdk_title_color" android:ellipsize="end" android:id="@id/conversationTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/ai_sdk_secondary_color" android:id="@id/conversationTimestamp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+</LinearLayout>

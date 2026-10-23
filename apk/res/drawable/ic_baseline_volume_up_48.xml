@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_ic_generic_circle" />
+    <item>
+        <inset android:drawable="@drawable/fg_ic_baseline_volume_up_48" android:insetLeft="12.0dip" android:insetRight="12.0dip" android:insetTop="12.0dip" android:insetBottom="12.0dip" />
+    </item>
+</layer-list>

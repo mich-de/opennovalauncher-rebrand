@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.teslacoilsw.launcher.search.TouchPositionLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_row" android:background="?selectableItemBackground" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+        <ImageView android:id="@android:id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" android:layout_weight="0.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <ImageView android:id="@id/displayIcon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="fitCenter" android:layout_weight="0.0" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="16.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@android:id/summary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/actions" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </com.teslacoilsw.launcher.search.TouchPositionLinearLayout>
+    <com.teslacoilsw.launcher.widget.DumbGridLayout android:id="@id/actions_grid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="48.0dip" app:fillDirection="end|top" />
+</LinearLayout>

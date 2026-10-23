@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/v2SystemPill" android:background="@drawable/ai_sdk_v2_system_pill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="14.0dip" android:paddingVertical="8.0dip">
+        <ImageView android:id="@id/v2SystemIcon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_ai_warning_v2" android:contentDescription="@null" android:layout_marginEnd="8.0dip" app:tint="@color/ai_sdk_v2_system_text" />
+        <TextView android:textSize="12.5sp" android:textColor="@color/ai_sdk_v2_system_text" android:id="@id/v2SystemText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.25" android:fontFamily="sans-serif-medium" android:letterSpacing="-0.01" />
+        <TextView android:textSize="12.5sp" android:textColor="@color/ai_sdk_v2_system_retry" android:id="@id/v2SystemRetry" android:padding="4.0dip" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_sdk_v2_system_retry" android:fontFamily="sans-serif-medium" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</FrameLayout>

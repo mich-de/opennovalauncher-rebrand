@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:pivotX="12.0" android:pivotY="12.0" android:scaleX="0.5" android:scaleY="0.5">
+        <path android:fillColor="@drawable/$ic_download_badge_small__0" android:pathData="M12,12m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+        <path android:fillColor="#ffffffff" android:pathData="M11,6H13V12.5L15.5,10L17,11.5L12,16.5L7,11.5L8.5,10L11,12.5V6Z" />
+        <path android:fillColor="#ffffffff" android:pathData="M7,17.5h10v1.5h-10z" />
+    </group>
+</vector>

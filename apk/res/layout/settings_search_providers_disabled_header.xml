@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/search_providers_disabled_providers" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/name" android:paddingLeft="44.0dip" android:paddingRight="0.0dip" android:paddingStart="44.0dip" android:paddingEnd="0.0dip" style="@style/ListSeparatorTextViewStyle" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

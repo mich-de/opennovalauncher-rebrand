@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:id="@id/badge_type" android:background="?selectableItemBackground" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip">
+                <TextView android:textAppearance="?textAppearanceListItem" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/badge_type" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textAppearance="?preferenceactivity_textAppearanceListItemSecondary" android:textColor="?android:textColorSecondary" android:gravity="center_vertical" android:id="@id/badge_type_summary" android:background="@drawable/abc_spinner_mtrl_am_alpha" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="10" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/shared_options" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:id="@id/badge_type_border" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <com.teslacoilsw.launcher.widget.FontFamilyTextView android:text="@string/unread_count_position_and_size" style="@style/SectionHeader" />
+                <RelativeLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.teslacoilsw.launcher.widget.RadioGrid android:id="@id/radiogrid_position" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="128.0dip" android:layout_marginLeft="26.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:rowCount="3" android:columnCount="3">
+                        <RadioButton android:layout_gravity="center" android:id="@id/position_top_left" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip" />
+                        <RadioButton android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <RadioButton android:layout_gravity="center" android:id="@id/position_top_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <RadioButton android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <Space android:layout_width="64.0dip" android:layout_height="64.0dip" />
+                        <RadioButton android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <RadioButton android:layout_gravity="center" android:id="@id/position_bottom_left" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <RadioButton android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <RadioButton android:layout_gravity="center" android:id="@id/position_bottom_right" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </com.teslacoilsw.launcher.widget.RadioGrid>
+                    <com.teslacoilsw.notifier.widget.BadgeArtIconPreview android:textSize="0.0px" android:id="@id/preview" android:paddingTop="32.0dip" android:paddingBottom="32.0dip" android:layout_width="128.0dip" android:layout_height="128.0dip" android:drawableTop="@drawable/ic_pref_launcher_icon_envelope" android:drawablePadding="0.0dip" android:layout_alignLeft="@id/radiogrid_position" android:layout_alignTop="@id/radiogrid_position" android:layout_alignRight="@id/radiogrid_position" android:layout_alignBottom="@id/radiogrid_position" />
+                    <RadioGroup android:id="@id/radiogroup_size" android:layout_width="wrap_content" android:layout_height="136.0dip" android:layout_marginLeft="48.0dip" android:layout_marginTop="-4.0dip" android:layout_marginBottom="-4.0dip" android:weightSum="2.0" android:layout_toRightOf="@id/radiogrid_position" android:layout_alignTop="@id/radiogrid_position" android:layout_alignBottom="@id/radiogrid_position" android:layout_alignParentRight="true">
+                        <RadioButton android:id="@id/large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/size_large" android:layout_weight="0.0" style="@style/RadioText" />
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/size_medium" android:layout_weight="0.0" style="@style/RadioText" />
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/size_small" android:layout_weight="0.0" style="@style/RadioText" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/count_only_options" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.teslacoilsw.launcher.widget.FontFamilyTextView android:text="@string/presets" style="@style/SectionHeader" />
+                <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RadioGroup android:orientation="horizontal" android:id="@id/radiogroup_preset" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <RadioButton android:id="@id/preset_light" android:tag="\#ecffffff:#00040302:#00040302:15:8" android:text="@string/material" android:layout_weight="0.0" style="@style/RadioIconButton" />
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/preset_holo" android:tag="\#f033b5e5:#f0343434:#00040302:15:0" android:text="@string/unread_style_holo" android:layout_weight="0.0" style="@style/RadioIconButton" />
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/preset_classic" android:tag="\#fff0f0f0:#f0f44235:#00040302:15:7" android:text="@string/unread_style_classic" android:layout_weight="0.0" style="@style/RadioIconButton" />
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/preset_custom" android:tag="\#ff0099cc:#ff0099cc:#ffffffff:15:8" android:text="@string/custom" android:layout_weight="0.0" style="@style/RadioIconButton" />
+                    </RadioGroup>
+                </HorizontalScrollView>
+                <com.teslacoilsw.launcher.widget.FontFamilyTextView android:text="@string/colors" style="@style/SectionHeader" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/match_icon_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/match_icon_color" app:checkMode="toggle_switch" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center" android:id="@id/color_picker_options" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.teslacoilsw.shared.colorpicker.ColorPickerTextView android:id="@id/color_picker_stroke" android:text="@string/border" style="@style/ColorTextButton" />
+                    <com.teslacoilsw.shared.colorpicker.ColorPickerTextView android:id="@id/color_picker_inner" android:text="@string/badge" style="@style/ColorTextButton" />
+                    <com.teslacoilsw.shared.colorpicker.ColorPickerTextView android:id="@id/color_picker_text" android:text="@string/text" style="@style/ColorTextButton" />
+                </LinearLayout>
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCornerRadiusSeekBarView android:id="@id/seek_corner_radius" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/corner_radius" app:max="8" app:min="0" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCardBorderView android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/dynamic_only_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefCheckableView android:id="@id/notifications_in_popup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/notifications_in_popup_menu" android:summary="@string/notifications_in_popup_menu_summary" app:bind="popup_menu_include_notifications" app:checkMode="toggle_switch" />
+                <com.teslacoilsw.launcher.preferences.fancyprefs.FancyPrefView android:id="@id/test_notification" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/test_notification_badge" android:summary="@string/test_notification_badge_summary" />
+            </LinearLayout>
+            <FrameLayout android:background="?preferenceactivity_cardIdleBackground" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <View android:layout_gravity="top" android:id="@id/bottom_shadow" android:background="@drawable/settings_card_shadow_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/select_badge_frame" android:background="?preferenceactivity_cardIdleBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="56.0dip">
+            <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/select_badge_type" android:background="@color/windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <FrameLayout android:id="@id/select_badge_frame_shadow" android:layout_width="fill_parent" android:layout_height="8.0dip">
+                <View android:background="@drawable/settings_card_shadow_bottom" android:layout_width="fill_parent" android:layout_height="8.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/warning" android:background="@color/windowBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="24.0dip" android:elevation="8.0dip">
+            <TextView android:id="@id/warning_text" android:background="@color/windowBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="8.0dip" />
+        </FrameLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:theme="http://schemas.android.com/apk/res-auto">
+    <category title="@string/stock_theme_marshmallow" />
+    <item drawable="@drawable/ic_lptheme" />
+    <item drawable="@drawable/ic_lptheme_calculator" />
+    <item drawable="@drawable/ic_lptheme_clock" />
+    <item drawable="@drawable/ic_lptheme_contacts" />
+    <item drawable="@drawable/ic_lptheme_download" />
+    <item drawable="@drawable/ic_lptheme_email" />
+    <item drawable="@drawable/ic_lptheme_phone" />
+    <item drawable="@drawable/ic_lptheme_settings" />
+    <item drawable="@drawable/ic_lptheme_sms" />
+    <item drawable="@drawable/ic_lptheme_sms2" />
+    <item drawable="@drawable/empty" />
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.teslacoilsw.launcher.widget.FontFamilyToolbar android:id="@id/toolbar" style="?toolbarStyle" />
+    <include android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/toolbar" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/simple_rv_layout" />
+    <View android:background="@drawable/divider_shadow_gradient_top" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_below="@id/toolbar" />
+</RelativeLayout>

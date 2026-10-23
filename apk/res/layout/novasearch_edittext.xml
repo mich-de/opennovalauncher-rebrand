@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.teslacoilsw.launcher.quicksearchbar.NovaSearchEditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.teslacoilsw.launcher.widget.AlphaOptimizedTextView android:ellipsize="none" android:id="@id/suggested_search_result_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="60.0dip" style="@style/Widget.AppCompat.EditText" />
+    <com.teslacoilsw.launcher.widget.AlphaOptimizedEditText android:ellipsize="none" android:id="@id/edittext" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search_apps" android:singleLine="true" android:imeOptions="actionGo|flagNoFullscreen" android:layout_marginStart="16.0dip" android:layout_marginEnd="60.0dip" />
+    <com.teslacoilsw.launcher.widget.AlphaOptimizedImageView android:layout_gravity="end|center" android:id="@id/clear" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_action_clear" android:scaleType="center" android:contentDescription="@string/abc_searchview_description_clear" />
+</com.teslacoilsw.launcher.quicksearchbar.NovaSearchEditText>

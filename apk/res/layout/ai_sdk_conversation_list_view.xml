@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/conversationRecyclerView" android:paddingTop="4.0dip" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/ai_sdk_secondary_color" android:gravity="center" android:id="@id/conversationEmptyState" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/ai_sdk_chat_no_conversations" />
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/conversationSkeleton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_auto_start="true" app:shimmer_base_alpha="0.7" app:shimmer_duration="1200" app:shimmer_highlight_alpha="0.9">
+        <LinearLayout android:orientation="vertical" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="72.0dip" android:layout_height="12.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="16.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="120.0dip" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="88.0dip" android:layout_height="12.0dip" android:layout_marginTop="20.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="14.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="140.0dip" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="20.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="110.0dip" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginTop="20.0dip" />
+            <View android:background="@drawable/ai_sdk_skeleton_line" android:layout_width="132.0dip" android:layout_height="12.0dip" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</merge>

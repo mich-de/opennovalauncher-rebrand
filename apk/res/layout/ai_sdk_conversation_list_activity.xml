@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/ai_sdk_chat_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar android:id="@id/conversationListToolbar" android:background="@color/ai_sdk_card_background" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:elevation="4.0dip" />
+    <com.instabridge.ai.chat.ui.ConversationListView android:id="@id/conversationListView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

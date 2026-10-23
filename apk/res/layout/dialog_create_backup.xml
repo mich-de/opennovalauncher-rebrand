@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?colorControlActivated" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.5dip" android:text="@string/backup_name_of_backup" android:layout_marginStart="21.5dip" style="@style/label_hint" />
+    <EditText android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.5dip" android:layout_marginRight="21.5dip" android:layout_marginBottom="16.0dip" android:hint="@string/title" android:inputType="textCapWords" android:imeOptions="actionDone" android:importantForAutofill="no">
+        <requestFocus />
+    </EditText>
+    <Spinner android:layout_gravity="center" android:id="@id/type_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

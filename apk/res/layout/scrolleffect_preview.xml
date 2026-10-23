@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center|top" android:background="@drawable/pref_anim_preview_wallpaper" android:padding="12.0dip" android:layout_width="157.66998dip" android:layout_height="157.66998dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.teslacoilsw.launcher.preferences.fragments.ScrollEffectPreviewPagedView android:orientation="horizontal" android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:id="@id/desktop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pref_anim_preview_desktop" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:id="@id/drawer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pref_anim_preview_desktop_2" />
+        </LinearLayout>
+    </com.teslacoilsw.launcher.preferences.fragments.ScrollEffectPreviewPagedView>
+</FrameLayout>
