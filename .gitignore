@@ -8,3 +8,6 @@ Thumbs.db
 
 # build
 apk/build/
+
+# apktool decode tree (rigenerabile con apktool d + tools/strip-trackers.py)
+apk-full/

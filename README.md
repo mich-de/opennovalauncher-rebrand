@@ -34,6 +34,30 @@ Motivo: l'APK è stato ricostruito a partire da risorse decodificate con apktool
 Rinominare package o classi richiederebbe la decompilazione e ricompilazione dei bytecode, non
 disponibile in questo workspace.
 
+## Rimozione tracker
+
+`re/opennovalauncher.apk` è la build con tracker neutralizzati (`tools/strip-trackers.py`):
+
+- ContentProvider/Service rimossi dal manifest: Branch (3 provider + 8 service), Meta Audience
+  Network, Vungle, Instabridge
+- Permessi rimossi: `AD_ID`, `ACCESS_ADSERVICES_ATTRIBUTION`, `ACCESS_ADSERVICES_AD_ID`,
+  `BIND_GET_INSTALL_REFERRER_SERVICE`
+- `zy/c` (facade Firebase): metodi di invio eventi e `recordException` resi no-op
+- `yx/b` (wrapper Amplitude): init e tracking resi no-op
+- `NovaApplication`: Amplitude, Crashlytics e Firebase Analytics non inizializzati;
+  Instabridge `isEligibleForMobile` forzato a false
+
+Le classi degli SDK restano nel dex: R8 ha fuso classi eterogenee negli stessi file, eliminarle
+romperebbe l'app. Sono disattivate, non cancellate.
+
+Riproduzione:
+
+```bash
+apktool d re/opennovalauncher.apk -o apk-full
+python3 tools/strip-trackers.py apk-full
+apktool b apk-full -o unsigned.apk
+```
+
 ## Build
 
 ```bash
